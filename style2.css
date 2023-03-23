@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0; 
+ }
+
+
+ h1{
+    margin: 15px;
+    padding: 25px;
+    color: green;
+ }
+
+ /*Prends en compte le dernier*/ 
+ h1{
+    margin: 10px;
+    padding: 5px;
+    color: blue;
+ }
+ /* +,  premier élément après le
+ premier élément indiqué */
+ ul + p {
+     font-size: 50px;
+     color: crimson;
+ }
+ 
+ /* >, sélectionne les enfants directs */
+ 
+ #container > p {
+     font-size: 40px;
+     color: rebeccapurple;
+ }
+ 
+ /* ~, sélectionne les éléments
+ directment après l'élément indiqué */
+ 
+ #container2 ~ p {
+     font-size: 50px;
+     color: indigo;
+ }
+ 
+ /* attr */
+ h1[title] {
+     font-size: 10px;
+ }
+ 
+ /* checkbox */
+.voyage{
+    display: flex;
+    color: #000 !important;
+    font-size: small !important;
+}
+
+label[for=p1] {
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    margin-left: 3cm;
+}
+
+
+label[for=p3] {
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+ input[type=checkbox] {
+     display: none;
+ }
+  
+ label {
+    padding: 10px;
+    border: solid 1px darkblue;
+ }
+
+ input:checked + label {
+    background-color: blue;
+    border: solid 3px black;
+    color: white;
+ } 
+ 
+ /*  not  */
+ 
+ .one:not(.three) {
+     background: #000;
+ }
+ 
+ /* nth-child, fonctione avec odd et even */
+ 
+ .item:nth-child(odd) {
+     background: blue;
+ }
